@@ -12,15 +12,17 @@ This project runs a Flask application integrated with **Prometheus** for metrics
 
 ---
 
-## 🛠 Project Structure
+## 🛠️ Project Structure
+
+```bash
 .
 ├── app.py                # Flask app with Prometheus metrics
 ├── requirements.txt      # Python dependencies
 ├── Dockerfile            # Flask app Docker image
-├── docker-compose.yml    # Multi-service orchestration
+├── docker-compose.yml    # All services defined here
 ├── prometheus.yml        # Prometheus configuration
 └── templates/
-└── index.html        # Simple UI displaying request count
+    └── index.html        # Simple UI showing request count
 
 
 
