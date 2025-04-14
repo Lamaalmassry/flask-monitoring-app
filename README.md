@@ -55,20 +55,19 @@ This project runs a Flask application integrated with **Prometheus** for metrics
 
 ### Clone and Run
 
-```bash
 git clone https://github.com/Lamaalmassry/flask-monitoring-app.git
 cd flask-monitoring-app
 docker-compose up --build
 
-```bash
-📊 Metrics Explanation
+
+### 📊 Metrics Explanation
 Counter: request_count_total
 Incremented each time the root / route is accessed.
 Exposed via /metrics endpoint on port 8000.
 Displayed on the home page (index.html).
 
-```bash
-🌐 Access the App
+
+### 🌐 Access the App
 Flask App: http://localhost:5000
 Metrics Endpoint: http://localhost:8000/metrics
 Prometheus Dashboard: http://localhost:9090
