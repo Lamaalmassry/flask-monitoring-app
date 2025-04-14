@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Prometheus Monitoring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: black;  
+            color: white;             
+        }
+        h1 {
+            color: #4CAF50;          
+        }
+        .metrics {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;  
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .metric {
+            font-size: 18px;
+            color: white;            
+        }
+        #requestCount {
+            font-size: 24px;
+            color: #FF9800;          
+            font-weight: bold;       
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Flask Prometheus Monitoring</h1>
+    <p>This page is being served by Flask, and we are tracking the number of requests!</p>
+
+    <div class="metrics">
+        <div class="metric">
+            <strong>Total Requests:</strong> <span id="requestCount">{{ request_count }}</span>
+        </div>
+    </div>
+</body>
+</html>
